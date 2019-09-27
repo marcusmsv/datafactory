@@ -1,0 +1,81 @@
+{
+	"name": "AzureSqlDWTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDW3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "varchar"
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "host_id",
+				"type": "varchar"
+			},
+			{
+				"name": "host_name",
+				"type": "varchar"
+			},
+			{
+				"name": "neighbourhood_group",
+				"type": "varchar"
+			},
+			{
+				"name": "neighbourhood",
+				"type": "varchar"
+			},
+			{
+				"name": "latitude",
+				"type": "varchar"
+			},
+			{
+				"name": "longitude",
+				"type": "varchar"
+			},
+			{
+				"name": "room_type",
+				"type": "varchar"
+			},
+			{
+				"name": "price",
+				"type": "varchar"
+			},
+			{
+				"name": "minimum_nights",
+				"type": "varchar"
+			},
+			{
+				"name": "number_of_reviews",
+				"type": "varchar"
+			},
+			{
+				"name": "last_review",
+				"type": "varchar"
+			},
+			{
+				"name": "reviews_per_month",
+				"type": "varchar"
+			},
+			{
+				"name": "calculated_host_listings_count",
+				"type": "varchar"
+			},
+			{
+				"name": "availability_365",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "airbnb"
+		}
+	}
+}
