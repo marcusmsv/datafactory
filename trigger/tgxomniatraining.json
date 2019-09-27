@@ -1,0 +1,17 @@
+{
+	"name": "tgxomniatraining",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2019-09-27T00:58:00.000Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
