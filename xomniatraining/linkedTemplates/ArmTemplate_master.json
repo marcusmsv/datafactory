@@ -1,0 +1,84 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory Name",
+			"defaultValue": "xomniatraining"
+		},
+		"AzureSqlDW1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDW1'"
+		},
+		"AzureSqlDW2_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDW2'"
+		},
+		"AzureSqlDW3_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDW3'"
+		},
+		"airbnb_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'airbnb'"
+		},
+		"fileShare_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'fileShare'"
+		},
+		"storage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'storage'"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas Token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureSqlDW1_connectionString": {
+						"value": "[parameters('AzureSqlDW1_connectionString')]"
+					},
+					"AzureSqlDW2_connectionString": {
+						"value": "[parameters('AzureSqlDW2_connectionString')]"
+					},
+					"AzureSqlDW3_connectionString": {
+						"value": "[parameters('AzureSqlDW3_connectionString')]"
+					},
+					"airbnb_connectionString": {
+						"value": "[parameters('airbnb_connectionString')]"
+					},
+					"fileShare_connectionString": {
+						"value": "[parameters('fileShare_connectionString')]"
+					},
+					"storage_connectionString": {
+						"value": "[parameters('storage_connectionString')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

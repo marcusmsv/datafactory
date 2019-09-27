@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "xomniatraining"
+		},
+		"AzureSqlDW1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDW2_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDW3_connectionString": {
+			"value": ""
+		},
+		"airbnb_connectionString": {
+			"value": ""
+		},
+		"fileShare_connectionString": {
+			"value": ""
+		},
+		"storage_connectionString": {
+			"value": ""
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
