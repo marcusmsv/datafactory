@@ -40,8 +40,8 @@
 						"mappings": [
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 1
+									"name": "id",
+									"type": "String"
 								},
 								"sink": {
 									"name": "id",
@@ -50,8 +50,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 2
+									"name": "name",
+									"type": "String"
 								},
 								"sink": {
 									"name": "name",
@@ -60,8 +60,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 3
+									"name": "host_id",
+									"type": "String"
 								},
 								"sink": {
 									"name": "host_id",
@@ -70,8 +70,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 4
+									"name": "host_name",
+									"type": "String"
 								},
 								"sink": {
 									"name": "host_name",
@@ -80,8 +80,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 5
+									"name": "neighbourhood_group",
+									"type": "String"
 								},
 								"sink": {
 									"name": "neighbourhood_group",
@@ -90,8 +90,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 6
+									"name": "neighbourhood",
+									"type": "String"
 								},
 								"sink": {
 									"name": "neighbourhood",
@@ -100,8 +100,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 7
+									"name": "latitude",
+									"type": "String"
 								},
 								"sink": {
 									"name": "latitude",
@@ -110,8 +110,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 8
+									"name": "longitude",
+									"type": "String"
 								},
 								"sink": {
 									"name": "longitude",
@@ -120,8 +120,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 9
+									"name": "room_type",
+									"type": "String"
 								},
 								"sink": {
 									"name": "room_type",
@@ -130,8 +130,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 10
+									"name": "price",
+									"type": "String"
 								},
 								"sink": {
 									"name": "price",
@@ -140,8 +140,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 11
+									"name": "minimum_nights",
+									"type": "String"
 								},
 								"sink": {
 									"name": "minimum_nights",
@@ -150,8 +150,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 12
+									"name": "number_of_reviews",
+									"type": "String"
 								},
 								"sink": {
 									"name": "number_of_reviews",
@@ -160,8 +160,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 13
+									"name": "last_review",
+									"type": "String"
 								},
 								"sink": {
 									"name": "last_review",
@@ -170,8 +170,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 14
+									"name": "reviews_per_month",
+									"type": "String"
 								},
 								"sink": {
 									"name": "reviews_per_month",
@@ -180,8 +180,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 15
+									"name": "calculated_host_listings_count",
+									"type": "String"
 								},
 								"sink": {
 									"name": "calculated_host_listings_count",
@@ -190,8 +190,8 @@
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 16
+									"name": "availability_365",
+									"type": "String"
 								},
 								"sink": {
 									"name": "availability_365",
